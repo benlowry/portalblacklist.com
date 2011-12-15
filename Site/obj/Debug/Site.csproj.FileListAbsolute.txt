@@ -1,0 +1,7 @@
+C:\Work\PortalBlacklist\Site\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.dll
+C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.pdb
+C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.dll.CodeAnalysisLog.xml
+C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.dll.lastcodeanalysissucceeded
+C:\Work\PortalBlacklist\Site\obj\Debug\PortalBlacklist.Site.dll
+C:\Work\PortalBlacklist\Site\obj\Debug\PortalBlacklist.Site.pdb
