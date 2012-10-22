@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
-<FxCopReport Version="10.0">
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
  <Targets>
-  <Target Name="C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.dll">
+  <Target Name="\\psf\Home\Dropbox\Work\portalblacklist.com\Site\bin\PortalBlacklist.Site.dll">
    <Modules>
     <Module Name="portalblacklist.site.dll">
      <Messages>
-      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Add an AssemblyVersion attribute to 'PortalBlacklist.Site.dll'.</Issue>
       </Message>
      </Messages>
@@ -15,81 +15,81 @@
        <Types>
         <Type Name="Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'Default' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'Page', 'TemplateControl', 'Control'</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#Generate(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="PortalBlacklist.Site.Default.Encrypt(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="71">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "-".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="52">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "/".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="69">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "/".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="85">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0x000000".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="82">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0x333333".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="83">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0xCCCCCC".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="84">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0xFFFFFF".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="70">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: ":".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="51">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "://".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="68">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "://".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="86">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "Is this your site?  You\'re on PortalBlacklist.com!".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="73">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "\\n".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="72">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "\\r".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="54">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "autoSize".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="50">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "center".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="79">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "false".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="63">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.display.DisplayObjectContainer".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="65">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.display.Loader".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="62">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.display.Sprite".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="59">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.net.URLLoader".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="58">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.net.URLRequest".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="64">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.system.Capabilities".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="60">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.text.TextField".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="61">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.text.TextFormat".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="53">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "http".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="47">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "http://pbl.portalblacklist.com/blacklist.txt".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="81">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "input".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="55">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "left".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="78">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "true".</Issue>
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="80">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "type".</Issue>
+            <Message Id="PortalBlacklist.Site.Default.Encrypt(System.String,System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="71">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "-".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="52">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "/".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="69">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "/".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="85">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0x000000".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="82">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0x333333".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="83">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0xCCCCCC".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="84">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "0xFFFFFF".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="70">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: ":".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="51">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "://".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="68">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "://".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="86">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "Is this your site?  You\'re on PortalBlacklist.com!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="73">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "\\n".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="72">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "\\r".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="54">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "autoSize".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="50">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "center".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="79">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "false".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="63">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.display.DisplayObjectContainer".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="65">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.display.Loader".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="62">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.display.Sprite".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="59">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.net.URLLoader".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="58">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.net.URLRequest".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="64">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.system.Capabilities".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="60">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.text.TextField".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="61">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "flash.text.TextFormat".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="53">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "http".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="47">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "http://pbl.portalblacklist.com/blacklist.txt".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="81">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "input".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="55">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "left".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="78">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "true".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="80">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'text' of a call to 'Default.Encrypt(string, string)'. Retrieve the following string(s) from a resource table instead: "type".</Issue>
             </Message>
-            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="158">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: ".".</Issue>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="158">Method 'Default.Generate(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: ".".</Issue>
             </Message>
-            <Message Id="DisplayObjectContainer" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="63">Correct the spelling of the unrecognized token 'DisplayObjectContainer' in the literal '"flash.display.DisplayObjectContainer"'.</Issue>
+            <Message Id="DisplayObjectContainer" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="63">Correct the spelling of the unrecognized token 'DisplayObjectContainer' in the literal '"flash.display.DisplayObjectContainer"'.</Issue>
             </Message>
-            <Message Id="PortalBlacklist" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="86">Correct the spelling of the unrecognized token 'PortalBlacklist' in the literal '"Is this your site?  You\'re on PortalBlacklist.com!"'.</Issue>
+            <Message Id="PortalBlacklist" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="86">Correct the spelling of the unrecognized token 'PortalBlacklist' in the literal '"Is this your site?  You\'re on PortalBlacklist.com!"'.</Issue>
             </Message>
-            <Message Id="TextField" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="60">Correct the spelling of the unrecognized token 'TextField' in the literal '"flash.text.TextField"'.</Issue>
+            <Message Id="TextField" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="60">Correct the spelling of the unrecognized token 'TextField' in the literal '"flash.text.TextField"'.</Issue>
             </Message>
-            <Message Id="TextFormat" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="61">Correct the spelling of the unrecognized token 'TextFormat' in the literal '"flash.text.TextFormat"'.</Issue>
+            <Message Id="TextFormat" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="61">Correct the spelling of the unrecognized token 'TextFormat' in the literal '"flash.text.TextFormat"'.</Issue>
             </Message>
-            <Message Id="URLLoader" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="59">Correct the spelling of the unrecognized token 'URLLoader' in the literal '"flash.net.URLLoader"'.</Issue>
+            <Message Id="URLLoader" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="59">Correct the spelling of the unrecognized token 'URLLoader' in the literal '"flash.net.URLLoader"'.</Issue>
             </Message>
-            <Message Id="URLRequest" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="58">Correct the spelling of the unrecognized token 'URLRequest' in the literal '"flash.net.URLRequest"'.</Issue>
+            <Message Id="URLRequest" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="58">Correct the spelling of the unrecognized token 'URLRequest' in the literal '"flash.net.URLRequest"'.</Issue>
             </Message>
-            <Message Id="autoSize" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="54">Correct the spelling of the unrecognized token 'autoSize' in the literal '"autoSize"'.</Issue>
+            <Message Id="autoSize" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="54">Correct the spelling of the unrecognized token 'autoSize' in the literal '"autoSize"'.</Issue>
             </Message>
-            <Message Id="pbl" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="47">Correct the spelling of the unrecognized token 'pbl' in the literal '"http://pbl.portalblacklist.com/blacklist.txt"'.</Issue>
+            <Message Id="pbl" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="47">Correct the spelling of the unrecognized token 'pbl' in the literal '"http://pbl.portalblacklist.com/blacklist.txt"'.</Issue>
             </Message>
-            <Message Id="portalblacklist" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="47">Correct the spelling of the unrecognized token 'portalblacklist' in the literal '"http://pbl.portalblacklist.com/blacklist.txt"'.</Issue>
+            <Message Id="portalblacklist" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="47">Correct the spelling of the unrecognized token 'portalblacklist' in the literal '"http://pbl.portalblacklist.com/blacklist.txt"'.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetList()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\Work\PortalBlacklist\Site" File="Default.aspx.cs" Line="258">Object 'stream' can be disposed more than once in method 'Default.GetList()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 258</Issue>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="\\psf\home\Dropbox\Work\portalblacklist.com\Site" File="Default.aspx.cs" Line="258">Object 'stream' can be disposed more than once in method 'Default.GetList()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 258</Issue>
             </Message>
            </Messages>
           </Member>
@@ -97,7 +97,7 @@
         </Type>
         <Type Name="Global" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2011-03-27 21:09:43Z" FixCategory="DependsOnFix">
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2012-10-22 17:39:42Z" FixCategory="DependsOnFix">
            <Issue Certainty="90" Level="Error">'Global' is marked ComVisible(true) but has the following ComVisible(false) types in its object hierarchy: 'HttpApplication'</Issue>
           </Message>
          </Messages>
@@ -118,7 +118,7 @@
    <Url>http://msdn.microsoft.com/library/ms182202(VS.100).aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="90">Error</MessageLevel>
-   <File Name="interoperabilityrules.dll" Version="10.0.0.0" />
+   <File Name="interoperabilityrules.dll" Version="11.0.0.0" />
   </Rule>
   <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
    <Name>Do not dispose objects multiple times</Name>
@@ -128,7 +128,7 @@
    <Url>http://msdn.microsoft.com/library/ms182334(VS.100).aspx</Url>
    <Email />
    <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
   </Rule>
   <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
    <Name>Do not pass literals as localized parameters</Name>
@@ -138,7 +138,7 @@
    <Url>http://msdn.microsoft.com/library/ms182187(VS.100).aspx</Url>
    <Email />
    <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
   </Rule>
   <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
    <Name>Literals should be spelled correctly</Name>
@@ -148,7 +148,7 @@
    <Url>http://msdn.microsoft.com/library/bb264488(VS.100).aspx</Url>
    <Email />
    <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
   </Rule>
   <Rule TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016">
    <Name>Mark assemblies with AssemblyVersionAttribute</Name>
@@ -158,7 +158,7 @@
    <Url>http://msdn.microsoft.com/library/ms182155(VS.100).aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="95">Error</MessageLevel>
-   <File Name="designrules.dll" Version="10.0.0.0" />
+   <File Name="designrules.dll" Version="11.0.0.0" />
   </Rule>
  </Rules>
  <Localized>

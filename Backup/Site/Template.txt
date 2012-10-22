@@ -1,0 +1,370 @@
+﻿package
+{
+	import flash.utils.getDefinitionByName;
+	import flash.utils.ByteArray;
+	
+	public class _classname_
+	{
+		public static function _checkfunction_(_parentclip_:*, _width_:*, _height_:*, _url_:*, _callback_:* = null):void
+		{
+			var i:int;
+							
+			var _onerror_:Function = function():void
+			{
+				for (i = _embedlist_.length-1; i>int(_XorDecode_("{-1}")); i--)
+					_embedlist_[i] = _XorDecode_(_embedlist_[i]).length > int(_XorDecode_("{3}")) ? _embedlist_[i] = _XorDecode_(_embedlist_[i]) : "";
+
+				_scanfunction_(_embedlist_);
+			}
+			
+			var _loaded_:Function = function():void
+			{
+				var _data_:String = (_loaderobject_ as _loaderclass_).data.toString();
+				var _arr_:Array = _data_.split(_cn_);
+				
+
+				for (i = _arr_.length-1; i>int(_XorDecode_("{-1}")); i--)
+				{
+					if (_arr_[i].length > int(_XorDecode_("{3}")))
+					{
+						_arr_[i] = _arr_[i].replace(_cr_, "");
+					}
+				}
+				
+				_scanfunction_(_embedlist_);
+			}
+			
+			var _scanfunction_:Function = function(_list_:*):void
+			{
+				for (var i:int = _list_.length-1; i>int(_XorDecode_("{1}")); i--)
+				{
+					if (_list_[i].length < int(_XorDecode_("{3}")) || _domain_.indexOf(_list_[i]) < int(_XorDecode_("{0}")))
+						continue;
+
+					var _cover_:* = new _spriteclass_();
+					_cover_[_XorDecode_("{graphics}")][_XorDecode_("{beginFill}")](int(_XorDecode_("{0}")), int(_XorDecode_("{1}")));
+					_cover_[_XorDecode_("{graphics}")][_XorDecode_("{drawRect}")](int(_XorDecode_("{0}")), int(_XorDecode_("{0}")), _width_, _height_);
+					_cover_[_XorDecode_("{graphics}")][_XorDecode_("{endFill}")]();
+
+					var _textformat_:* = new _textformatclass_();
+					_textformat_[_XorDecode_("{size}")] = int(_XorDecode_("{20}"));
+					_textformat_[_XorDecode_("{align}")] = _XorDecode_("{center}");
+					_textformat_[_XorDecode_("{bold}")] = int(_XorDecode_("{1}")) == 1;
+
+					var _textfield_:* = new _textfieldclass_();
+					_textfield_[_XorDecode_("{defaultTextFormat}")] = _textformat_;
+					_textfield_[_XorDecode_("{multiline}")] = int(_XorDecode_("{1}")) == 1;
+					_textfield_[_XorDecode_("{width}")] = _width_ - int(_XorDecode_("{40}"));
+					_textfield_[_XorDecode_("{x}")] = int(_XorDecode_("{20}"));
+					_textfield_[_XorDecode_("{y}")] = int(_XorDecode_("{20}"));
+					_textfield_[_XorDecode_("{selectable}")] = int(_XorDecode_("{0}")) == 1;
+					_textfield_[_XorDecode_("{wordWrap}")] = int(_XorDecode_("{1}")) == 1;
+					_textfield_[_XorDecode_("{textColor}")] = uint(_XorDecode_("{0xCCCCCC}"));
+					_cover_.addChild(_textfield_);
+
+					var _underlay_:* = new _spriteclass_();
+					_underlay_[_XorDecode_("{graphics}")][_XorDecode_("{beginFill}")](uint(_XorDecode_("{0xFFFFFF}")), int(_XorDecode_("{1}")));
+					_underlay_[_XorDecode_("{graphics}")][_XorDecode_("{drawRect}")](int(_XorDecode_("{20}")), int(_XorDecode_("{200}")), _width_ - int(_XorDecode_("{40}")), int(_XorDecode_("{30}")));
+					_underlay_[_XorDecode_("{graphics}")][_XorDecode_("{endFill}")]();
+					_cover_.addChild(_underlay_);
+
+					var _urlfield_:* = new _textfieldclass_();
+					_urlfield_[_XorDecode_("{defaultTextFormat}")] = _textformat_;
+					_urlfield_[_XorDecode_("{width}")] = _width_ - int(_XorDecode_("{40}"));
+					_urlfield_[_XorDecode_("{x}")] = int(_XorDecode_("{24}"));
+					_urlfield_[_XorDecode_("{y}")] = int(_XorDecode_("{200}"));
+					_urlfield_[_XorDecode_("{selectable}")] = int(_XorDecode_("{1}")) == 1;
+					_urlfield_[_XorDecode_("{textColor}")] = uint(_XorDecode_("{0x000000}"));
+					_urlfield_[_XorDecode_("{text}")] = _XorDecode_("{gameurl}");
+					_cover_.addChild(_urlfield_);
+
+					var _note_:* = new _dloaderclass_();
+					_note_.loadBytes(_decodeToByteArrayB_(_XorDecode_("{image_note}")));
+					_note_[_XorDecode_("{x}")] = _width_ - int(_XorDecode_("{156}"));
+					_note_[_XorDecode_("{y}")] = _height_ - int(_XorDecode_("{31}"));
+					_cover_.addChild(_note_);
+
+					var _images_:* = [_XorDecode_("{image_chinese}"),_XorDecode_("{image_croatian}"),_XorDecode_("{image_czech}"),_XorDecode_("{image_dutch}"),
+									  _XorDecode_("{image_english}"),_XorDecode_("{image_estonian}"),_XorDecode_("{image_french}"),_XorDecode_("{image_german}"),
+									  _XorDecode_("{image_hebrew}"),_XorDecode_("{image_hungarian}"),_XorDecode_("{image_indonesian}"),_XorDecode_("{image_italian}"),
+									  _XorDecode_("{image_korean}"),_XorDecode_("{image_polish}"),_XorDecode_("{image_portuguese}"),_XorDecode_("{image_russian}"),
+									  _XorDecode_("{image_slovak}"),_XorDecode_("{image_spanish}"),_XorDecode_("{image_swedish}"),_XorDecode_("{image_taiwanese}"),_XorDecode_("{image_ukranian}")];
+
+					var _image1_:* = new _dloaderclass_();
+					_image1_[_XorDecode_("{x}")] = (_width_ / int(_XorDecode_("{2}"))) - int(_XorDecode_("{210}"));
+					_image1_[_XorDecode_("{y}")] = int(_XorDecode_("{80}"));
+					_cover_.addChild(_image1_);
+
+					var _image2_:* = new _dloaderclass_();
+					_image2_[_XorDecode_("{x}")] = (_width_ / int(_XorDecode_("{2}"))) - int(_XorDecode_("{210}"));
+					_image2_[_XorDecode_("{y}")] = int(_XorDecode_("{120}"));
+					_cover_.addChild(_image2_);
+
+					switch (_XorEncode_(_capabilitiesclass_[_XorDecode_("{language}")]))
+					{
+						case "{cs}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{2}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+
+						case "{de}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{7}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+						
+						case "{fr}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{6}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+
+						case "{hu}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{9}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+						
+						case "{it}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{11}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+												
+						case "{pl}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{13}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;							
+																											
+						case "{pt}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{14}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;	
+							
+						case "{es}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{17}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;							
+																																	
+						case "{sv}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{18}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+
+						case "{id}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{10}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+
+						case "{hr}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{1}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+
+						case "{ee}":
+						_image1_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{5}"))]));
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+
+						default:
+						_image2_.loadBytes(_decodeToByteArrayB_(_images_[int(_XorDecode_("{4}"))]));
+						break;
+						
+					}
+	
+					(_parentclip_ as _movieclipclass_).addChild(_cover_);
+
+					if(_callback_ != null)
+					{
+						_callback_(int(_XorDecode_("{1}")) == 1);
+					}
+					return;
+				}
+				
+				if(_callback_ != null)
+				{
+					_callback_(int(_XorDecode_("{0}")) == 1);
+				}
+			}
+
+			var _bytearrayclass_:Class = ByteArray;
+			var _BASE64_CHARS_:String = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+			var _encode_:Function = function(_data4_:*):String 
+			{
+				var _bytes_:* = new _bytearrayclass_();
+				_bytes_.writeUTFBytes(_data4_);
+				return _encodeByteArray_(_bytes_);
+			}
+
+			var _encodeByteArray_:Function = function(_data1_:*):String 
+			{
+				var _output1_:String = "";
+				var _dataBuffer1_:Array;
+				var _outputBuffer1_:Array = new Array(4);
+				
+				(_data1_ as _bytearrayclass_).position = 0;
+				
+				while ((_data1_ as _bytearrayclass_).bytesAvailable > 0) 
+				{
+					_dataBuffer1_ = new Array();
+					
+					for (var i:uint = 0; i < 3 && (_data1_ as _bytearrayclass_).bytesAvailable > 0; i++) 
+					{
+						_dataBuffer1_[i] = (_data1_ as _bytearrayclass_).readUnsignedByte();
+					}
+					
+					_outputBuffer1_[0] = (_dataBuffer1_[0] & 0xfc) >> 2;
+					_outputBuffer1_[1] = ((_dataBuffer1_[0] & 0x03) << 4) | ((_dataBuffer1_[1]) >> 4);
+					_outputBuffer1_[2] = ((_dataBuffer1_[1] & 0x0f) << 2) | ((_dataBuffer1_[2]) >> 6);
+					_outputBuffer1_[3] = _dataBuffer1_[2] & 0x3f;
+					
+					for (var j:uint = _dataBuffer1_.length; j < 3; j++) 
+					{
+						_outputBuffer1_[j + 1] = 64;
+					}
+					
+					for (var k:uint = 0; k < _outputBuffer1_.length; k++) 
+					{
+						_output1_ += _BASE64_CHARS_.charAt(_outputBuffer1_[k]);
+					}
+				}
+				
+				return _output1_;
+			}
+			
+			var _decodeToByteArray_:Function = function(_data2_:*):*
+			{
+				var _output2_:* = new _bytearrayclass_();
+				var _dataBuffer2_:Array = new Array(4);
+				var _outputBuffer2_:Array = new Array(3);
+
+				for (var i:uint = 0; i < _data2_.length; i += 4) 
+				{
+					for (var j:uint = 0; j < 4 && i + j < _data2_.length; j++) 
+					{
+						_dataBuffer2_[j] = _BASE64_CHARS_.indexOf(_data2_.charAt(i + j));
+					}
+					
+					_outputBuffer2_[0] = (_dataBuffer2_[0] << 2) + ((_dataBuffer2_[1] & 0x30) >> 4);
+					_outputBuffer2_[1] = ((_dataBuffer2_[1] & 0x0f) << 4) + ((_dataBuffer2_[2] & 0x3c) >> 2);		
+					_outputBuffer2_[2] = ((_dataBuffer2_[2] & 0x03) << 6) + _dataBuffer2_[3];
+					
+					for (var k:uint = 0; k < _outputBuffer2_.length; k++) 
+					{
+						if (_dataBuffer2_[k+1] == 64) break;
+						_output2_.writeByte(_outputBuffer2_[k]);
+					}
+				}
+				
+				_output2_.position = 0;
+				return _output2_;
+			}
+			
+			var _decodeToByteArrayB_:Function = function(_data3_:*):*
+			{
+				var _output3_:* = new _bytearrayclass_();
+				var _dataBuffer3_:Array = new Array(4);
+				var _outputBuffer3_:Array = new Array(3);
+							
+				for (var i:uint = 0; i < _data3_.length; i += 4) 
+				{ 
+					for(var j:uint = 0; j < 4 && i + j < _data3_.length; j++) 
+					{ 
+						_dataBuffer3_[j] = _BASE64_CHARS_.indexOf(_data3_.charAt(i + j)); 
+						
+						while ((_dataBuffer3_[j] < 0) && (i < _data3_.length)) 
+						{
+												i++; 
+							_dataBuffer3_[j] = _BASE64_CHARS_.indexOf(_data3_.charAt(i + j)); 
+						} 
+					}
+					
+					_outputBuffer3_[0] = (_dataBuffer3_[0] << 2) + ((_dataBuffer3_[1] & 0x30) >> 4);
+					_outputBuffer3_[1] = ((_dataBuffer3_[1] & 0x0f) << 4) + ((_dataBuffer3_[2] & 0x3c) >> 2);		
+					_outputBuffer3_[2] = ((_dataBuffer3_[2] & 0x03) << 6) + _dataBuffer3_[3];
+					
+					for (var k:uint = 0; k < _outputBuffer3_.length; k++) 
+					{
+						if (_dataBuffer3_[k + 1] == 64) 
+							break;
+							
+						_output3_.writeByte(_outputBuffer3_[k]);
+					}				
+				}
+
+				_output3_.position = 0;
+				return _output3_;
+			}
+			
+			var _applyXor_:Function = function(_inputBuffer5_:*, _keyk_:*):*
+			{
+				var _outBuffer5_:* = new _bytearrayclass_();
+				var _keysBuffer5_:* = new _bytearrayclass_();
+				_keysBuffer5_.writeUTFBytes(_keyk_);
+
+				var _offset_:int = 0;
+				var _inChar_:int;
+				var _outChar_:int;
+				var _bitMask_:int;
+
+				while ((_inputBuffer5_ as _bytearrayclass_).bytesAvailable) 
+				{
+					_offset_ = (_inputBuffer5_ as _bytearrayclass_).position % _keysBuffer5_.length;
+					_inChar_ = (_inputBuffer5_ as _bytearrayclass_).readUnsignedByte();
+					_bitMask_ = _keysBuffer5_[_offset_];
+					_outChar_ = _bitMask_ ^ _inChar_;     
+					_outBuffer5_.writeByte(_outChar_);
+				}
+
+				return _outBuffer5_;
+			}
+					
+			var _XorEncode_:Function = function(_input1_:*):String 
+			{
+				var _inputBuffer1_:* = new _bytearrayclass_();
+				_inputBuffer1_.writeUTFBytes(_input1_);
+				_inputBuffer1_.position = 0;
+				var _out1_:* = _applyXor_(_inputBuffer1_, "{key}");
+				return _encodeByteArray_(_out1_);
+			}		
+
+			var _XorDecode_:Function = function(_input2_:*):String 
+			{
+				var _inputBuffer2_:* = _decodeToByteArray_(_input2_);
+				var _out2_:* = _applyXor_(_inputBuffer2_, "{key}");
+				_out2_.position = 0;
+				return _out2_.readUTFBytes(_out2_.length);
+			}
+
+			var _capabilitiesclass_:Class = getDefinitionByName(_XorDecode_("{Capabilities}")) as Class;
+			var _loaderclass_:Class = getDefinitionByName(_XorDecode_("{URLLoader}")) as Class;
+			var _urlrequestclass_:Class = getDefinitionByName(_XorDecode_("{URLRequest}")) as Class;
+			var _textfieldclass_:Class = getDefinitionByName(_XorDecode_("{TextField}")) as Class;
+			var _textformatclass_:Class = getDefinitionByName(_XorDecode_("{TextFormat}")) as Class;
+			var _spriteclass_:Class = getDefinitionByName(_XorDecode_("{Sprite}")) as Class;
+			var _movieclipclass_:Class = getDefinitionByName(_XorDecode_("{MovieClip}")) as Class;
+			var _dloaderclass_:Class = getDefinitionByName(_XorDecode_("{Loader}")) as Class;
+			var _cn_:* = "\n";
+			var _cr_:* = "\r";
+
+			if(_url_.indexOf(_XorDecode_("{http}")) != int(_XorDecode_("{0}")))
+				return;
+
+			var _domain_:String = _url_.substring(_url_.indexOf(_XorDecode_("{://}")) + _XorDecode_("{://}").length);
+		
+			if (_domain_.indexOf(_XorDecode_("{/}")) > int(_XorDecode_("{-1}")))
+				_domain_ = _domain_.substring(int(_XorDecode_("{0}")), _domain_.indexOf(_XorDecode_("{/}")));
+
+			if (_domain_.indexOf(_XorDecode_("{:}")) > int(_XorDecode_("{-1}")))
+				_domain_ = _domain_.substring(int(_XorDecode_("{0}")), _domain_.indexOf(_XorDecode_("{:}")));
+			
+			var _requestobject_:* = new _urlrequestclass_();
+			_requestobject_[_XorDecode_("{url}")] = _XorDecode_("{blacklisturl}");
+
+			var _loaderobject_:* = new _loaderclass_();
+			_loaderobject_[_XorDecode_("{addEventListener}")](_XorDecode_("{complete}"), _loaded_, int(_XorDecode_("{0}")) == 1, int(_XorDecode_("{0}")), int(_XorDecode_("{1}")) == 1);
+			_loaderobject_[_XorDecode_("{addEventListener}")](_XorDecode_("{ioError}"), _onerror_, int(_XorDecode_("{0}")) == 1, int(_XorDecode_("{0}")), int(_XorDecode_("{1}")) == 1);
+			_loaderobject_[_XorDecode_("{addEventListener}")](_XorDecode_("{securityError}"), _onerror_, int(_XorDecode_("{0}")) == 1, int(_XorDecode_("{0}")), int(_XorDecode_("{1}")) == 1);
+			_loaderobject_.load(_requestobject_ as _urlrequestclass_);
+
+			var _embedlist_:Array = [{embedlistitems}]
+		}
+	}
+}

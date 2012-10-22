@@ -242,7 +242,7 @@ namespace PortalBlacklist.Site
 
 			string list = null;
 
-			var request = (HttpWebRequest)WebRequest.Create("http://pbl.portalblacklist.com/blacklist.txt");
+			var request = (HttpWebRequest)WebRequest.Create("http://s3files.playtomic.com/blacklist.txt");
 			
 			using(var response = request.GetResponse())
 			{

@@ -5,3 +5,10 @@ C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.dll.CodeAnalysisLog.xml
 C:\Work\PortalBlacklist\Site\bin\PortalBlacklist.Site.dll.lastcodeanalysissucceeded
 C:\Work\PortalBlacklist\Site\obj\Debug\PortalBlacklist.Site.dll
 C:\Work\PortalBlacklist\Site\obj\Debug\PortalBlacklist.Site.pdb
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\bin\PortalBlacklist.Site.dll
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\bin\PortalBlacklist.Site.pdb
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\bin\PortalBlacklist.Site.dll.CodeAnalysisLog.xml
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\bin\PortalBlacklist.Site.dll.lastcodeanalysissucceeded
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\obj\Debug\Site.csprojResolveAssemblyReference.cache
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\obj\Debug\PortalBlacklist.Site.dll
+\\psf\Home\Dropbox\Work\portalblacklist.com\Site\obj\Debug\PortalBlacklist.Site.pdb
